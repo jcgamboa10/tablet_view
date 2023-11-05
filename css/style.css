@@ -1,0 +1,198 @@
+/* Background color: beige #DDD0C8
+   Text Color: Dark Gray #323232
+   Heading Colors: Dark Gray
+*/
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    /* padding: 20px 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #323232;
+    margin: 0px 10px;
+}
+
+body {
+    margin: 0px 10px;
+    /* font-family: sans-serif; */
+    background-color: #DDD0C8;
+    color: #323232; 
+}
+
+/* HEADING STYLING */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #323232;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #323232;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: larger;
+}
+
+/* LINK STYLING */
+a {
+    text-decoration: none;
+    color: #323232;
+    font-size: large;   
+}
+
+.skipToMain {
+    display: hidden;
+    position: relative;
+    top: -400px;
+}
+
+a:hover {
+    color: gray;
+} 
+.selected {
+    text-decoration: underline;
+    text-decoration-color: #323232;
+    color: maroon
+}
+/* PARAGRAPH STYLING */
+p {
+    line-height: 32px;  
+}
+
+/* RECIPE STYLING */
+.recipe {
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    /* gap: 15px; */
+}
+
+.recipe-info {
+    grid-column: 2; /* Place the box in the middle column */
+    margin: 0 auto; /* Center horizontally within the middle column */
+    text-align: center; /* Center the text within the box */
+}
+
+/* PET STYLING */
+.pet {
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    /* gap: 15px; */
+}
+
+.pet-info {
+    grid-column: 2; /* Place the box in the middle column */
+    margin: 0 auto; /* Center horizontally within the middle column */
+    text-align: center; /* Center the text within the box */
+}
+
+/* LOCATION styling */
+.location {
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    /* gap: 15px; */
+}
+
+.location-info {
+    grid-column: 2; /* Place the box in the middle column */
+    margin: 0 auto; /* Center horizontally within the middle column */
+    text-align: center; /* Center the text within the box */
+}
+
+.photo-gallery {
+    grid-column: 2; /* Place the box in the middle column */
+    margin: 0 auto; /* Center horizontally within the middle column */
+    text-align: center; /* Center the text within the box */
+
+}
+
+/* PHOTO GALLERY STYLING */
+.static {
+    display: none;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+
+    html {
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skipToMain {
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }  
+
+    .gif {
+        display: none;
+    }
+
+    .static {
+        display: block;
+    }
+
+
+  }
+
+img {
+    border: solid 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 10px;
+    border-top-right-radius: 30px;
+}
+
+video {
+    border: solid 5px;
+    margin: 20px 0px;
+    padding: 10px;
+    border-top-right-radius: 30px;
+}
+
+/* Larger views (NOT COMPLETED) */
+@media screen and (min-width: 768px) {
+    
+    body {
+        background-color: whitesmoke;
+    }
+
+    .skipToMain {
+        position: relative;
+        top: -100px;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    .skipToMain:focus {
+        position: absolute;
+        top: 20px;
+    }
+
+    :focus {
+        border: solid 2px;
+    }
+      
+}
