@@ -82,6 +82,10 @@ nav a:hover {
     background-color: #f0f0f0;
 }
 
+nav a:focus {
+    background-color: #f0f0f0;
+}
+
 nav li:first-child {
     margin-right: auto;
 }
@@ -205,6 +209,27 @@ p {
     display: none;
 }
 
+img {
+    border: solid 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    aspect-ratio: 3 / 3;
+}
+
+video {
+    border: solid 5px;
+    margin: 20px 0px;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    aspect-ratio: 3 / 3;
+}
+
+
+
 @media screen and (prefers-reduced-motion: reduce){
 
     html {
@@ -227,26 +252,10 @@ p {
 
   }
 
-img {
-    border: solid 5px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-    padding: 10px;
-    border-top-right-radius: 30px;
-}
 
-video {
-    border: solid 5px;
-    margin: 20px 0px;
-    padding: 10px;
-    border-top-right-radius: 30px;
-}
 
 /* Tablet view */
 @media screen and (min-width: 768px) {
-
     
     body {
         background-color: whitesmoke;
@@ -269,13 +278,29 @@ video {
 
     .skipToMain:focus {
         position: absolute;
-        top: 20px;
+        top: 80px;
     }
 
-    :focus {
-        border: solid 2px;
+    /* Changing the styling of the grid info */
+
+    .location {
+        grid-template-columns: 5% 90% 5%;
     }
-      
+
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-row figure {
+        width: 33%;
+    }
+
+    .bottom-row {
+        display: flex;
+        justify-content: space-around;
+    }
+    
 }
 
 /* DESKTOP VIEW */
